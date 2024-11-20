@@ -29,7 +29,7 @@ var (
 		"Slack User Token":              regexp.MustCompile(`xoxp\-[0-9]{10,13}\-[0-9]{10,13}[a-zA-Z0-9\-]*`),
 		"Slack Workspace Access Token":  regexp.MustCompile(`xoxa\-[0-9]{10,13}\-[0-9]{10,13}[a-zA-Z0-9\-]*`),
 		"Slack Workspace Refresh Token": regexp.MustCompile(`xoxr\-[0-9]{10,13}\-[0-9]{10,13}[a-zA-Z0-9\-]*`),
-		"Slack App Token": 		 regexp.MustCompile(`xapp\-[0-9]{10,13}\-[0-9]{10,13}[a-zA-Z0-9\-]*`),
+		"Slack App Token":               regexp.MustCompile(`xapp-[0-9]+-[a-zA-Z0-9\-]+-[0-9]{10,13}[a-zA-Z0-9\-]*`),
 	}
 	verifyURL = "https://slack.com/api/auth.test"
 )
